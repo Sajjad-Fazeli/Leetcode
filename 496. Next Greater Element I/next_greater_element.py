@@ -4,7 +4,7 @@ class Solution:
     stack =  []
 
     for n in nums2:
-      while deq an stack[-1] < n:
+      while stack and stack[-1] < n:
             pop_element =stack.pop()
             greater_element_map[pop_element] = n
       stack.append(n)
